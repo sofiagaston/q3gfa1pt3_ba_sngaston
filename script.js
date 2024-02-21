@@ -1,7 +1,7 @@
 
-var consent = confirm("Do you agree to share your personal information with our site?");
+var question = confirm("Do you agree to share your personal information with our site?");
 
-if (consent) {
+if (question) {
     var nickname = prompt("Please enter your nickname:");
 
     var heightInches = parseFloat(prompt("Please enter your height in inches:"));
@@ -13,8 +13,12 @@ if (consent) {
     var heightft = (feet + "'" + inch);
 
     var weightlbs = (weightKg * 2.2)
-
-    document.write("Nickname: " + nickname + " <br>Height(ft): " + heightft + "<br>Weight:" + weightlbs + "lbs");
+    document.write("Nickname: " + nickname + " <br>Height(ft): " + heightft + "<br>Weight(lbs):" + weightlbs + "lbs <br>(Check Console Tab ;)");
+    
+    let x = nickname;
+    let y = heightft;
+    let z = weightlbs;
+    console.log("Nickname: " + x + " | Height(ft): " + y + " | Weight:" + z + "lbs");
     
 } else {
     
